@@ -15,31 +15,31 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+
 </head>
 
 <body>
-    <h1>Edit your post</h1>
+
     <div class="container">
+        <h1>Write Your Blog</h1>
         <div class="blogs">
-        <%if(typeof blog!="undefined"){%>
-            <h3 class="user">Post Id : <span class="detail">
-                    <%= blog.id%>
-                </span> </h3>
-            <h2 class="user">Username : <span class="detail">
-                    <%= blog.username%>
-                </span> </h2>
-            <form method="post" action="/blogs/<%=blog.id%>?_method=PATCH">
-                <textarea name="content" id="" cols="80" rows="10">
-                    <%= blog.content%>
-            </textarea>
-                <br>
-                <button>Update</button>
-                <a href="http://localhost:8080/blogs/" class="dbutton"> <i class="fa-solid fa-arrow-left-long"></i></a>
-            </form>
+            <a href="http://localhost:8080/blogs" style="margin:auto; "class="dbutton"><i
+                class="fa-solid fa-arrow-left-long"></i></a>
+            <form action="/blogs" method="post">
+    
+                <p class="label">Enter Username:</p>
+                <input type="text" name="username" placeholder="enter username"> <br><br>
+                <p class="label">Write Your Thought:</p>
+                <textarea name="content" rows="10" cols="50"></textarea><br><br>
+                <div style="margin-right: 40rem; background: transparent; border: none; "class="button">
+                    <button style="font-size: 3rem; color: white;" ><i class="fa-solid fa-square-arrow-up-right"></i></button>
+            </form><br>
+            
         </div>
     </div>
+    </div>
 
-<%}%>
+
 </body>
 
 </html>

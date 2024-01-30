@@ -21,25 +21,7 @@
     <h1>Edit your post</h1>
     <div class="container">
         <div class="blogs">
-        <%if(typeof blog!="undefined"){%>
-            <h3 class="user">Post Id : <span class="detail">
-                    <%= blog.id%>
-                </span> </h3>
-            <h2 class="user">Username : <span class="detail">
-                    <%= blog.username%>
-                </span> </h2>
-            <form method="post" action="/blogs/<%=blog.id%>?_method=PATCH">
-                <textarea name="content" id="" cols="80" rows="10">
-                    <%= blog.content%>
-            </textarea>
-                <br>
-                <button>Update</button>
-                <a href="http://localhost:8080/blogs/" class="dbutton"> <i class="fa-solid fa-arrow-left-long"></i></a>
-            </form>
-        </div>
-    </div>
-
-<%}%>
+        
 </body>
 
 </html>

@@ -20,6 +20,8 @@
     <br><br>
     <a class="home" href="http://localhost:8080"><i class="fa-solid fa-house"></i></a><br><br>
     <h1 style="margin: auto; width: 850px; padding: 1rem 1rem; ">All blogs</h1>
+<%if(typeof blog!="undefined"){%>
+
     <%for(blog of blogs){%>
         <div class="container">
             <div class="blogs">
@@ -56,6 +58,8 @@
 
 
                 <br>
+                <%}%>
+
 </body>
 
 </html>

@@ -17,26 +17,11 @@
 </head>
 
 <body>
-    <h1>Show </h1>
-    <div class="container">
-        <div class="blogs">
+    <br><br>
+    <a class="home" href="http://localhost:8080"><i class="fa-solid fa-house"></i></a><br><br>
+    <h1 style="margin: auto; width: 850px; padding: 1rem 1rem; ">All blogs</h1>
 
-            <p class="user">Post Id :<span class="detail">
-                <%if(typeof blog!="undefined"){%>
 
-                    <%= blog.id%>
-                </span> </p>
-            <h3 class="user">Username: <span class="detail"> @<%= blog.username%> </span> </h3>
-            <h4 class="content">
-                <%= blog.content%>
-            </h4>
-            <br>
-            <%}%>
-
-            <a href="http://localhost:8080/blogs/" class="dbutton"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <br>
-        </div>
-    </div>
 </body>
 
 </html>
