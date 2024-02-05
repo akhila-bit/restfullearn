@@ -6,7 +6,7 @@ const methodOverride = require('method-override');
 
 app.use(express.urlencoded({ extended: true })); // It is a middleware used to parse incoming requests with URL-encoded payloads.
 app.use(methodOverride('_method')); // middleware in Express.js allows you to use HTTP verbs such as PUT or DELETE in places where the client doesn't support it
-// app.use(express.static("public")); // (Static files server middleware) setting directory for css and js files 
+app.use(express.static("public")); // (Static files server middleware) setting directory for css and js files 
 app.use(express.static("./dist", { index: true }));
 
 app.set("view engine", "ejs");  // setting view engine to ejs for ejs templates
